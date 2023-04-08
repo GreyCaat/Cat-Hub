@@ -15,8 +15,9 @@ if syn then
     if game.PlaceId == 7230977870 or game.PlaceId == 6647962258 then
         if game.PlaceId == 6647962258 then
             SendNotification("Info", "Join a Server")
+        else
+            url = syn.request({Url = "https://raw.githubusercontent.com/GreyCaat/Cat-Hub/main/Games/Aeronautica.lua"}).Body
         end
-        url = syn.request({Url = "https://raw.githubusercontent.com/GreyCaat/Cat-Hub/main/Games/Aeronautica.lua"}).Body
     else
         SendNotification("Info", "Game is not supported")
     end
